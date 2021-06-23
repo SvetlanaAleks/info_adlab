@@ -1,0 +1,106 @@
+$blue: #00B2FF
+$yellow: #FFC940
+$purple: #FA00FF
+
+.investors
+	padding-top: 117px
+	padding-bottom: 143px
+	position: relative
+	&::before
+		content: ''
+		display: block
+		position: absolute
+		top: -381px
+		left: calc(50% - 1134px)
+		width: 2260px
+		height: 1627px
+		background: url('../img/bg_investors.png') no-repeat center
+	.container
+		width: 1470px
+	&__title
+		text-align: center
+		color: $pink
+		font-weight: 500
+		font-size: 25px
+		line-height: 30px
+		margin-bottom: 79px
+	&__list
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+
+
+.investor
+	max-width: 300px
+	width: 100%
+	text-align: center
+	&:nth-of-type(n+5)
+		margin-top: 60px
+	&--1
+		.investor
+			&__post
+				color: $pink
+			&__wrap-photo
+				&::before
+					border: 1px solid $pink
+	&--2
+		.investor
+			&__post
+				color: $blue
+			&__wrap-photo
+				&::before
+					border: 1px solid $blue
+	&--3
+		.investor
+			&__post
+				color: $yellow
+			&__wrap-photo
+				&::before
+					border: 1px solid $yellow
+	&--4
+		.investor
+			&__post
+				color: $purple
+			&__wrap-photo
+				&::before
+					border: 1px solid $purple
+	&__wrap-photo-border
+		text-align: center
+		margin: auto
+		margin-bottom: 29px
+		position: relative
+		width: 256px
+		height: 256px
+	&__wrap-photo
+		width: 100%
+		height: 100%
+		overflow: hidden
+		border-radius: 50%
+		background: #332659
+		display: flex
+		justify-content: center
+		align-items: flex-end
+		&::before
+			content: ''
+			display: block
+			position: absolute
+			width: 256px
+			height: 256px
+			right: -5px
+			bottom: -9px
+			border-radius: 50%
+			z-index: -1
+	&__name
+		font-weight: bold
+		font-size: 25px
+		line-height: 30px
+		margin-bottom: 17px
+	&__post
+		font-weight: 500
+		font-size: 18px
+		line-height: 27px
+		margin-bottom: 14px
+	&__desc
+		font-weight: 500
+		font-size: 18px
+		line-height: 28px
