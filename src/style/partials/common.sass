@@ -1,0 +1,60 @@
+body
+	font-family: $font
+	font-size: 20px
+	color: white
+	background: url('../img/svg/bg_header.svg') no-repeat center top
+	background-color: #1B1824 
+// Font icons
+.fico
+	display: inline-block
+	font-size: 3rem
+	&::before
+		display: block
+.container
+	width: 1170px
+	margin: 0 auto
+	+r(1600)
+		width: 1170px
+	+r(1280)
+		width: 940px
+	+r(1024)
+		width: 100%
+		padding: 0 30px
+	+r(768)
+		padding: 0 30px
+	+r(640)
+		padding: 0 20px
+
+
+.bold
+	font-weight: bold
+
+.btn
+	display: block
+	text-decoration: none
+	outline: none
+	color: white
+	font-weight: bold
+	font-size: 20px
+	line-height: 25px
+	max-width: 100%
+	width: 100%
+	border-radius: 50px
+	padding: 17px
+	text-align: center
+	transition: all .3s
+	border: none
+	&--full
+		background: $pink
+		&:hover
+			background: #FF27A9
+			box-shadow: 0px 12px 35px rgba(255, 0, 107, 0.5)
+		&:active
+			background: #CC00FF
+	&--empty
+		background: rgba(255, 255, 255, 0.01)
+		border: 1px solid #FFFFFF
+		&:hover
+			background: #FF006B
+		&:active
+			background: #FF27A9
