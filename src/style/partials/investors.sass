@@ -29,13 +29,14 @@ $purple: #FA00FF
 	&__list
 		display: flex
 		flex-wrap: wrap
-		justify-content: space-between
 
 
 .investor
 	max-width: 300px
 	width: 100%
 	text-align: center
+	&:not(:nth-child(4n))
+		margin-right: 85px
 	&:nth-of-type(n+5)
 		margin-top: 60px
 	&--1

@@ -10,59 +10,54 @@
 		margin-bottom: 91px
 	&__slider
 		position: relative
+	&__for
+		border: 1px solid rgba(255, 255, 255, 0.4)
+		border-radius: 15px
+		padding: 58px 100px 50px
+		min-height: 640px
 	&__nav
 		position: absolute
-		bottom: -188px
+		bottom: -228px
 		left: calc(50% - 437px)
 		height: 270px
-		.slick-slide
-			width: 237px
-			padding-top: 40px
-			+nlt
-				margin-right: 80px
-			&.slick-current
-				.slide-nav
-					&__wrap-photo-border
-						margin-bottom: 22px
-						width: 115px
-						height: 115px
-					&__wrap-photo
-						box-shadow: 0px 10px 50px #FF006B
-						&::before
-							content: ''
-							display: block
-							position: absolute
-							width: 115px
-							height: 115px
-							left: -4px
-							top: -7px
-							border-radius: 50%
-							border: 1px solid $pink
-							z-index: -1
-					&__name, &__post
-						display: block
+		display: flex
+	&__progress
+		position: absolute
+		bottom: 0
+		left: calc(50% - 300px)
+		height: 1px
+		width: 0
+		background: $pink
+		width: 0%
+		opacity: 1
+		&.animate
+			opacity: 1
+			width: 46%
+			transition: all 17s linear
+
 
 
 .slide-for
-	border: 1px solid rgba(255, 255, 255, 0.4)
-	border-radius: 15px
-	padding: 58px 100px 50px
-	min-height: 640px
-	&__desc
-		position: relative
-		padding-top: 100px
-		&::before
-			content: '“'
-			display: block
-			position: absolute
-			top: 0
-			left: 50%
-			transform: translateX(-50%) scaleX(-1) scaleY(-1)
-			font-size: 160px
-			line-height: 1
-			font-weight: 500
-			transform-origin: 50% 19%
-			color: $pink
+	opacity: 0
+	display: none
+	position: relative
+	padding-top: 100px
+	transition: all .3s
+	&::before
+		content: '“'
+		display: block
+		position: absolute
+		top: 0
+		left: 50%
+		transform: translateX(-50%) scaleX(-1) scaleY(-1)
+		font-size: 160px
+		line-height: 1
+		font-weight: 500
+		transform-origin: 50% 19%
+		color: $pink
+	&.active
+		opacity: 1
+		display: block
 	&__text
 		font-size: 25px
 		line-height: 50px
@@ -71,6 +66,34 @@
 	text-align: center
 	cursor: pointer
 	transition: all .3s
+	width: 237px
+	+nlt
+		margin-right: 80px
+	&.show
+		.slide-nav
+			&__wrap-photo
+				border: 1px solid $pink
+	&.active
+		.slide-nav
+			&__wrap-photo-border
+				margin-bottom: 22px
+				width: 115px
+				height: 115px
+			&__wrap-photo
+				box-shadow: 0px 10px 50px #FF006B
+				&::before
+					content: ''
+					display: block
+					position: absolute
+					width: 115px
+					height: 115px
+					left: -4px
+					top: -7px
+					border-radius: 50%
+					border: 1px solid $pink
+					z-index: -1
+			&__name, &__post
+				display: block
 	&__wrap-photo-border
 		text-align: center
 		margin: auto

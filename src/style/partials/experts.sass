@@ -14,13 +14,14 @@
 	&__list
 		display: flex
 		flex-wrap: wrap
-		justify-content: space-between
 
 
 .expert
 	max-width: 300px
 	width: 100%
 	text-align: center
+	&:not(:nth-child(4n))
+		margin-right: 90px
 	&:nth-of-type(n+5)
 		margin-top: 60px
 	&__wrap-photo-border
