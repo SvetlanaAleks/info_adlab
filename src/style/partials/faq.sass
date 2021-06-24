@@ -1,0 +1,46 @@
+.faq
+	padding-top: 48px
+	padding-bottom: 130px
+	&__title
+		text-align: center
+		color: $pink
+		font-weight: 500
+		font-size: 25px
+		line-height: 30px
+		margin-bottom: 113px
+
+
+
+.question
+	&:not(:last-of-type)
+		margin-bottom: 29px
+		padding-bottom: 30px
+		border-bottom: 1px solid $pink
+	&__top
+		display: flex
+		align-items: flex-start
+		justify-content: space-between
+		cursor: pointer
+		&.active
+			.question__plus
+				transform: rotate(45deg)
+	&__wrap-ttl
+		max-width: 770px
+		margin-right: 10px
+	&__ttl
+		font-weight: bold
+		font-size: 30px
+		line-height: 40px
+	&__plus
+		position: relative
+		font-weight: 500
+		font-size: 50px
+		line-height: 40px
+		color: $pink
+		transition: all .3s
+	&__text
+		display: none
+		max-width: 90%
+		margin-top: 20px
+		font-size: 20px
+		line-height: 50px
