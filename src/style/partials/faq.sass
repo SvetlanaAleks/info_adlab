@@ -1,6 +1,8 @@
 .faq
 	padding-top: 48px
 	padding-bottom: 130px
+	+r(1920)
+		padding-top: 44px
 	&__title
 		text-align: center
 		color: $pink
@@ -8,14 +10,20 @@
 		font-size: 25px
 		line-height: 30px
 		margin-bottom: 113px
+		+r(1920)
+			font-size: 20px
 
 
 
 .question
-	&:not(:last-of-type)
+	+nlt
 		margin-bottom: 29px
 		padding-bottom: 30px
 		border-bottom: 1px solid $pink
+	+r(1920)
+		+nlt
+			padding-bottom: 25px
+			margin-bottom: 33px
 	&__top
 		display: flex
 		align-items: flex-start

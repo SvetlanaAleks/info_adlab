@@ -5,6 +5,11 @@ body
 	background: url('../img/svg/bg_header.svg') no-repeat center top, url('../img/svg/bg_body_bottom.svg') no-repeat center bottom
 	background-color: #1B1824
 	overflow-x: hidden
+	+r(1920)
+		background-size: 1680px, auto
+html
+	overflow-x: hidden
+
 // Font icons
 .fico
 	display: inline-block
@@ -14,8 +19,8 @@ body
 .container
 	width: 1270px
 	margin: 0 auto
-	+r(1600)
-		width: 1170px
+	+r(1920)
+		width: 970px
 	+r(1280)
 		width: 940px
 	+r(1024)

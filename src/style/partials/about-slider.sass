@@ -1,6 +1,10 @@
 .about-slider
 	padding-top: 134px
 	background: url('../img/svg/bg_slider.svg') no-repeat center 64px
+	+r(1920)
+		padding-top: 109px
+		background-position-y: 84px
+		background-size: 100%
 	&__title
 		text-align: center
 		color: $pink
@@ -8,6 +12,9 @@
 		font-size: 25px
 		line-height: 30px
 		margin-bottom: 91px
+		+r(1920)
+			font-size: 20px
+			margin-bottom: 68px
 	&__slider
 		position: relative
 	&__for
@@ -15,12 +22,19 @@
 		border-radius: 15px
 		padding: 58px 100px 50px
 		min-height: 640px
+		+r(1920)
+			padding: 58px 70px 50px
+			min-height: 590px
+			padding-top: 104px
 	&__nav
 		position: absolute
 		bottom: -228px
-		left: calc(50% - 437px)
+		left: 50%
+		transform: translateX(-50%)
 		height: 270px
 		display: flex
+		+r(1920)
+			bottom: -235px
 	&__progress
 		position: absolute
 		bottom: 0
@@ -32,9 +46,14 @@
 		opacity: 1
 		&.animate
 			opacity: 1
-			width: 46%
-			transition: all 17s linear
-
+			width: 60%
+			transition: all 20s linear
+		&.hide
+			opacity: 0
+		+r(1920)
+			left: calc(50% - 220px)
+			&.animate
+				width: 46%
 
 
 .slide-for
@@ -58,9 +77,17 @@
 	&.active
 		opacity: 1
 		display: block
+	+r(1920)
+		padding-top: 58px
+		&::before
+			transform-origin: 50% 4%
+			font-size: 150px
 	&__text
 		font-size: 25px
 		line-height: 50px
+		+r(1920)
+			font-size: 22px
+			line-height: 40px
 
 .slide-nav
 	text-align: center
@@ -69,6 +96,9 @@
 	width: 237px
 	+nlt
 		margin-right: 80px
+	+r(1920)
+		+nlt
+			margin-right: 14px
 	&.show
 		.slide-nav
 			&__wrap-photo
@@ -79,6 +109,10 @@
 				margin-bottom: 22px
 				width: 115px
 				height: 115px
+				+r(1920)
+					width: 100px
+					height: 100px
+					margin-bottom: 31px
 			&__wrap-photo
 				box-shadow: 0px 10px 50px #FF006B
 				&::before
@@ -92,6 +126,10 @@
 					border-radius: 50%
 					border: 1px solid $pink
 					z-index: -1
+				+r(1920)
+					&::before
+						width: 100px
+						height: 100px
 			&__name, &__post
 				display: block
 	&__wrap-photo-border
@@ -100,6 +138,9 @@
 		position: relative
 		width: 85px
 		height: 85px
+		+r(1920)
+			width: 70px
+			height: 70px
 	&__wrap-photo
 		width: 100%
 		height: 100%
@@ -115,8 +156,13 @@
 		line-height: 30px
 		margin-bottom: 5px
 		display: none
+		+r(1920)
+			font-size: 22px
+			line-height: 25px
 	&__post
 		color: $pink
 		font-size: 15px
 		line-height: 29px
 		display: none
+		+r(1920)
+			line-height: 25px

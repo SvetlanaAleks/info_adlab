@@ -2,6 +2,9 @@
 	padding-top: 138px
 	padding-bottom: 255px
 	background: url('../img/bg_steps.png') no-repeat calc(50% - -130px) -109px
+	+r(1920)
+		padding-top: 160px
+		background: url('../img/bg_steps_1920.png') no-repeat calc(50% - -51px) -40px
 	&__title
 		text-align: center
 		color: $pink
@@ -9,6 +12,8 @@
 		font-size: 25px
 		line-height: 30px
 		margin-bottom: 69px
+		+r(1920)
+			font-size: 20px
 	&__wrapper
 		display: flex
 		flex-wrap: wrap
@@ -43,12 +48,23 @@
 		background: linear-gradient(242.88deg, #FFFFFF -7.35%, rgba(255, 255, 255, 0) 17.08%, rgba(255, 255, 255, 0) 50.65%, rgba(255, 255, 255, 0) 88.51%, #FFFFFF 109.87%), rgba(255, 255, 255, 0.2)
 		z-index: -1
 		opacity: 0
-		// transition: all .3s
 	&:hover
 		&::after
 			opacity: 1
 	&:nth-of-type(-n+2)
 		margin-bottom: 30px
+	+r(1920)
+		max-width: 470px
+		padding: 38px 68px 0
+		min-height: 333px
+		&:nth-of-type(1)
+			background: url('../img/bg_step_item_1920_1.jpg') no-repeat center
+		&:nth-of-type(2)
+			background: url('../img/bg_step_item_1920_2.jpg') no-repeat center
+		&:nth-of-type(3)
+			background: url('../img/bg_step_item_1920_3.jpg') no-repeat center
+		&:nth-of-type(4)
+			background: url('../img/bg_step_item_1920_4.jpg') no-repeat center
 	&__wrap-img
 		margin-bottom: 30px
 	&__ttl
@@ -56,7 +72,14 @@
 		font-size: 30px
 		line-height: 30px
 		margin-bottom: 20px
+		+r(1920)
+			font-size: 25px
+			line-height: 20px
+			margin-bottom: 15px
 	&__desc
 		font-weight: 500
 		font-size: 25px
 		line-height: 40px
+		+r(1920)
+			font-size: 20px
+			line-height: 30px

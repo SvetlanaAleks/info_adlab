@@ -2,6 +2,10 @@
 	padding-top: 230px
 	padding-bottom: 200px
 	background: url('../img/svg/bg_organizers.svg') no-repeat calc(50% - 130px) -154px
+	+r(1920)
+		padding-top: 340px
+		background-size: 97%
+		background-position: calc(50% - 104px) 50px
 	&__title
 		text-align: center
 		color: $pink
@@ -12,11 +16,16 @@
 			margin-bottom: 106px
 		&--bottom
 			margin-bottom: 71px
+		+r(1920)
+			font-size: 20px
 	&__list
 		display: flex
 		justify-content: center
 		&--top
 			margin-bottom: 133px
+		+r(1920)
+			&--top
+				margin-bottom: 96px
 
 .organizer-item
 	max-width: 450px
@@ -32,10 +41,16 @@
 	&--3
 		.organizer-item__photo
 			max-width: 134px
+	+r(1920)
+		max-width: 410px
+		+nlt
+			margin-right: 90px
 	&__photo
 		margin: auto
 		display: block
 		margin-bottom: 31px
+		+r(1920)
+			margin-bottom: 36px
 	&__text
 		font-weight: 500
 		font-size: 20px

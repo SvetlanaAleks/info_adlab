@@ -1,9 +1,14 @@
 .header
 	padding-top: 162px
 	padding-bottom: 100px
+	+r(1920)
+		padding-top: 176px
+		padding-bottom: 143px
 	&__wrap-title
 		position: relative
 		margin-bottom: 44px
+		+r(1920)
+			margin-bottom: 38px
 	&__title
 		text-align: center
 		font-family: $font
@@ -16,6 +21,11 @@
 			bottom: -8px
 			color: transparent
 			-webkit-text-stroke: 2px white
+		+r(1920)
+			font-size: 130px
+			line-height: 100%
+			&--bottom
+				left: 46px
 	&__desc
 		text-align: center
 		font-size: 30px
@@ -24,6 +34,8 @@
 		width: 100%
 		margin: auto
 		margin-bottom: 60px
+		+r(1920)
+			margin-bottom: 62px
 	&__wrap-btns
 		display: flex
 		align-items: center
@@ -32,3 +44,5 @@
 		max-width: 360px
 		+nlt
 			margin-right: 30px
+		+r(1920)
+			max-width: 270px

@@ -17,8 +17,16 @@ $purple: #FA00FF
 		background: url('../img/bg_investors.png') no-repeat center
 		pointer-events: none
 		z-index: -1
+	+r(1920)
+		padding-top: 149px
+		&::before
+			background-size: 80%
+			top: -336px
+			left: calc(50% - 1160px)
 	.container
 		width: 1470px
+		+r(1920)
+			width: 1135px
 	&__title
 		text-align: center
 		color: $pink
@@ -26,6 +34,8 @@ $purple: #FA00FF
 		font-size: 25px
 		line-height: 30px
 		margin-bottom: 79px
+		+r(1920)
+			font-size: 20px
 	&__list
 		display: flex
 		flex-wrap: wrap
@@ -67,6 +77,10 @@ $purple: #FA00FF
 			&__wrap-photo
 				&::before
 					border: 1px solid $purple
+	+r(1920)
+		max-width: 235px
+		&:not(:nth-child(4n))
+			margin-right: 64px
 	&__wrap-photo-border
 		text-align: center
 		margin: auto
@@ -74,6 +88,9 @@ $purple: #FA00FF
 		position: relative
 		width: 256px
 		height: 256px
+		+r(1920)
+			width: 230px
+			height: 230px
 	&__wrap-photo
 		width: 100%
 		height: 100%
@@ -93,17 +110,32 @@ $purple: #FA00FF
 			bottom: -9px
 			border-radius: 50%
 			z-index: -1
+		+r(1920)
+			&::before
+				width: 230px
+				height: 230px
+	&__photo
+		+r(1920)
+			max-width: 100%
 	&__name
 		font-weight: bold
 		font-size: 25px
 		line-height: 30px
 		margin-bottom: 17px
+		+r(1920)
+			font-size: 20px
 	&__post
 		font-weight: 500
 		font-size: 18px
 		line-height: 27px
 		margin-bottom: 14px
+		+r(1920)
+			font-size: 16px
+			line-height: 22px
+			margin-bottom: 21px
 	&__desc
 		font-weight: 500
 		font-size: 18px
 		line-height: 28px
+		+r(1920)
+			font-size: 16px
