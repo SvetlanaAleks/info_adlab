@@ -1,0 +1,99 @@
+.about-slider
+	padding-top: 134px
+	background: url('../img/svg/bg_slider.svg') no-repeat center 64px
+	&__title
+		text-align: center
+		color: $pink
+		font-weight: 500
+		font-size: 25px
+		line-height: 30px
+		margin-bottom: 91px
+	&__slider
+		position: relative
+	&__nav
+		position: absolute
+		bottom: -188px
+		left: calc(50% - 437px)
+		height: 270px
+		.slick-slide
+			width: 237px
+			padding-top: 40px
+			+nlt
+				margin-right: 80px
+			&.slick-current
+				.slide-nav
+					&__wrap-photo-border
+						margin-bottom: 22px
+						width: 115px
+						height: 115px
+					&__wrap-photo
+						box-shadow: 0px 10px 50px #FF006B
+						&::before
+							content: ''
+							display: block
+							position: absolute
+							width: 115px
+							height: 115px
+							left: -4px
+							top: -7px
+							border-radius: 50%
+							border: 1px solid $pink
+							z-index: -1
+					&__name, &__post
+						display: block
+
+
+.slide-for
+	border: 1px solid rgba(255, 255, 255, 0.4)
+	border-radius: 15px
+	padding: 58px 100px 50px
+	min-height: 640px
+	&__desc
+		position: relative
+		padding-top: 100px
+		&::before
+			content: '“'
+			display: block
+			position: absolute
+			top: 0
+			left: 50%
+			transform: translateX(-50%) scaleX(-1) scaleY(-1)
+			font-size: 160px
+			line-height: 1
+			font-weight: 500
+			transform-origin: 50% 19%
+			color: $pink
+	&__text
+		font-size: 25px
+		line-height: 50px
+
+.slide-nav
+	text-align: center
+	cursor: pointer
+	transition: all .3s
+	&__wrap-photo-border
+		text-align: center
+		margin: auto
+		position: relative
+		width: 85px
+		height: 85px
+	&__wrap-photo
+		width: 100%
+		height: 100%
+		border-radius: 50%
+		overflow: hidden
+		display: flex
+		justify-content: center
+		img
+			max-width: 100%
+	&__name
+		font-weight: 500
+		font-size: 22px
+		line-height: 30px
+		margin-bottom: 5px
+		display: none
+	&__post
+		color: $pink
+		font-size: 15px
+		line-height: 29px
+		display: none

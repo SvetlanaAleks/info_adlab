@@ -1,7 +1,5 @@
-// Main JS module
-// objectFitImages polyfill
-import objectFitImages from "object-fit-images";
+import Sliders from "./modules/Sliders";
 
-$(function() {
-  objectFitImages();
+$(function () {
+  Sliders.init();
 });
