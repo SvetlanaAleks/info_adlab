@@ -2,11 +2,19 @@ body
 	font-family: $font
 	font-size: 20px
 	color: white
-	background: url('../img/svg/bg_header.svg') no-repeat center top, url('../img/svg/bg_body_bottom.svg') no-repeat center bottom
+	background: url('../img/svg/bg_header.svg') no-repeat center top, url('../img/svg/bg_body_bottom.svg') no-repeat center 7387px
 	background-color: #1B1824
 	overflow-x: hidden
 	+r(1920)
 		background-size: 1680px, auto
+	+r(1440)
+		background-position: center top, center 6827px
+	+r(1024)
+		background-position: center top, center 6027px
+	+r(860)
+		background-position: center top, center 6987px
+	+r(768)
+		background-position: center top, center 5877px
 	+r(640)
 		background: url('../img/svg/bg_header_480.svg') no-repeat center -57px, url('../img/svg/bg_body_bottom_640.svg') no-repeat center bottom
 		background-color: #1B1824
