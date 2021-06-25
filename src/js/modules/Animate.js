@@ -5,7 +5,7 @@ const Animate = (function () {
   const infoSlider = $(".js-slider-info");
   const progress = $("#progress");
   const listDescMap = $("#js-slider");
-  const element = new Hammer(listDescMap[0]);
+  // const element = new Hammer(listDescMap[0]);
   return {
     touchList: function () {
       element.on("swipeleft", function (e) {
@@ -106,7 +106,7 @@ const Animate = (function () {
         .addTo(controller);
     },
     init: function () {
-      Animate.touchList();
+      // Animate.touchList();
       Animate.showContent();
       Animate.initSlider();
     },
