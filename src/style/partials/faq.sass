@@ -4,6 +4,8 @@
 	+r(1920)
 		padding-top: 44px
 		padding-bottom: 106px
+	+r(1024)
+		padding-bottom: 82px
 	&__title
 		text-align: center
 		color: $pink
@@ -15,6 +17,14 @@
 			font-size: 20px
 		+r(1300)
 			margin-bottom: 117px
+		+r(1024)
+			font-size: 18px
+			margin-bottom: 120px
+		+r(768)
+			font-size: 15px
+			margin-bottom: 62px
+		+r(480)
+			margin-bottom: 40px
 
 
 
@@ -31,6 +41,14 @@
 		+nlt
 			padding-bottom: 21px
 			margin-bottom: 39px
+	+r(768)
+		+nlt
+			padding-bottom: 24px
+			margin-bottom: 19px
+	+r(480)
+		+nlt
+			padding-bottom: 16px
+			margin-bottom: 20px
 	&__top
 		display: flex
 		align-items: flex-start
@@ -39,6 +57,8 @@
 		&.active
 			.question__plus
 				transform: rotate(45deg)
+		+r(768)
+			align-items: center
 	&__wrap-ttl
 		max-width: 770px
 		margin-right: 10px
@@ -48,6 +68,13 @@
 		line-height: 40px
 		+r(1300)
 			line-height: 1
+		+r(768)
+			font-size: 24px
+		+r(640)
+			font-size: 20px
+		+r(480)
+			font-size: 18px
+			line-height: 25px
 	&__plus
 		position: relative
 		font-weight: 500
@@ -55,6 +82,8 @@
 		line-height: 40px
 		color: $pink
 		transition: all .3s
+		+r(768)
+			font-size: 40px
 	&__text
 		display: none
 		max-width: 90%

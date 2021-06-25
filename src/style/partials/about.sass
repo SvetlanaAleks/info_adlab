@@ -1,5 +1,9 @@
 .about
 	padding-top: 98px
+	+r(768)
+		padding-top: 82px
+	+r(480)
+		padding-top: 42px
 	&__title
 		text-align: center
 		font-size: 40px
@@ -28,20 +32,57 @@
 			max-width: 790px
 			padding-bottom: 110px
 			margin-bottom: 72px
+		+r(1024)
+			font-size: 25px
+			line-height: 38px
+			max-width: 600px
+			padding-bottom: 79px
+			margin-bottom: 79px
+		+r(768)
+			font-size: 20px
+			line-height: 29px
+			max-width: 480px
+			padding-bottom: 58px
+			margin-bottom: 52px
+			&::after
+				height: 2px
+				width: 50px
+		+r(480)
+			font-size: 17px
+			line-height: 27px
+			padding-bottom: 0
+			margin-bottom: 80px
+			padding-top: 23px
+			border-bottom: none
+			&::after
+				width: 40px
 	&__subtitle
 		text-align: center
 		color: $pink
 		font-weight: 500
 		font-size: 25px
-		line-height: 30px
+		line-height: 30px 
 		margin-bottom: 50px
 		+r(1920)
 			font-size: 20px
 			margin-bottom: 29px
+		+r(1024)
+			font-size: 18px
+		+r(768)
+			font-size: 15px
+			margin-bottom: 18px
+		+r(480)
+			margin-bottom: 20px
 	&__desc
 		margin-bottom: 80px
 		+r(1920)
 			margin-bottom: 38px
+		+r(1024)
+			margin-bottom: 60px
+		+r(768)
+			margin-bottom: 38px
+		+r(480)
+			margin-bottom: 31px
 	&__text
 		font-weight: 500
 		font-size: 30px
@@ -53,10 +94,23 @@
 			line-height: 41px
 			+nlt
 				margin-bottom: 37px
+		+r(1300)
+			font-size: 22px
+			line-height: 36px
+			+nlt
+				margin-bottom: 32px
+		+r(768)
+			font-size: 18px
+			line-height: 30px
+		+r(480)
+			font-size: 15px
 	&__statistics
 		display: flex
 		align-items: flex-end
 		justify-content: space-between
+		+r(480)
+			justify-content: flex-start
+			flex-wrap: wrap
 
 
 .statistic-item
@@ -64,6 +118,15 @@
 	width: 100%
 	+r(1920)
 		max-width: 270px
+	+r(1024)
+		max-width: 200px
+	+r(768)
+		max-width: 160px
+	+r(480)
+		&:last-of-type
+			margin-top: 30px
+	+r(374)
+		max-width: 140px
 	&__num
 		color: $pink
 		font-weight: bold
@@ -73,6 +136,13 @@
 		display: block
 		+r(1920)
 			font-size: 100px
+		+r(1024)
+			font-size: 80px
+			line-height: 1
+			margin-bottom: 20px
+		+r(768)
+			font-size: 60px
+			margin-bottom: 10px
 	&__text
 		font-weight: 500
 		font-size: 30px
@@ -80,3 +150,9 @@
 		+r(1920)
 			font-size: 25px
 			line-height: 40px
+		+r(1024)
+			font-size: 22px
+			line-height: 36px
+		+r(768)
+			font-size: 18px
+			line-height: 30px

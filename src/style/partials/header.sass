@@ -6,11 +6,28 @@
 		padding-bottom: 143px
 	+r(1680)
 		padding-top: 197px
+	+r(1024)
+		padding-top: 156px
+		padding-bottom: 38px
+	+r(768)
+		padding-top: 104px
+	+r(640)
+		padding-top: 126px
+	+r(480)
+		padding-bottom: 30px
+	+r(374)
+		padding-top: 75px
 	&__wrap-title
 		position: relative
 		margin-bottom: 44px
 		+r(1920)
 			margin-bottom: 38px
+		+r(1024)
+			margin-bottom: 41px
+		+r(768)
+			margin-bottom: 34px
+		+r(480)
+			margin-bottom: 31px
 	&__title
 		text-align: center
 		font-family: $font
@@ -32,6 +49,28 @@
 			font-size: 110px
 			&--bottom
 				left: 116px
+		+r(1024)
+			font-size: 90px
+			&--bottom
+				left: calc(50% - 300px)
+		+r(768)
+			font-size: 70px
+			&--bottom
+				left: calc(50% - 235px)
+		+r(640)
+			font-size: 60px
+			&--bottom
+				left: calc(50% - 200px)
+		+r(480)
+			font-size: 48px
+			&--bottom
+				left: calc(50% - 163px)
+				-webkit-text-stroke: 1px #fff
+				bottom: -2px
+		+r(374)
+			font-size: 40px
+			&--bottom
+				left: calc(50% - 135px)
 	&__desc
 		text-align: center
 		font-size: 30px
@@ -42,13 +81,46 @@
 		margin-bottom: 60px
 		+r(1920)
 			margin-bottom: 62px
+		+r(1024)
+			font-size: 25px
+			line-height: 35px
+			max-width: 680px
+			margin-bottom: 44px
+		+r(768)
+			font-size: 18px
+			line-height: 31px
+			max-width: 480px
+			margin-bottom: 40px
+		+r(640)
+			font-size: 16px
+			line-height: 27px
+			max-width: 420px
+		+r(480)
+			text-align: left
+			margin-bottom: 35px
+			font-size: 15px
+			line-height: 29px
 	&__wrap-btns
 		display: flex
 		align-items: center
 		justify-content: center
+		+r(480)
+			display: block
 	&__btn
 		max-width: 360px
 		+nlt
 			margin-right: 30px
 		+r(1920)
 			max-width: 270px
+		+r(1024)
+			max-width: 310px
+			+nlt
+				margin-right: 20px
+		+r(768)
+			max-width: 220px
+		+r(480)
+			max-width: 100%
+			font-size: 15px
+			+nlt
+				margin-right: 0
+				margin-bottom: 20px

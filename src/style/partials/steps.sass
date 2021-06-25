@@ -11,6 +11,18 @@
 		background: url('../img/bg_steps_1440.png') no-repeat calc(50% - -1px) -53px
 	+r(1300)
 		padding-bottom: 145px
+	+r(1024)
+		padding-top: 154px
+		padding-bottom: 103px
+		background: url('../img/bg_steps_1024.png') no-repeat calc(50% - -121px) 1px
+	+r(768)
+		padding-top: 98px
+		padding-bottom: 99px
+		background: url('../img/bg_steps_768.png') no-repeat calc(50% - -77px) -82px
+	+r(640)
+		background: url('../img/bg_steps_640.png') no-repeat calc(50% - -129px) -226px
+		padding-top: 67px
+		padding-bottom: 66px
 	&__title
 		text-align: center
 		color: $pink
@@ -20,10 +32,18 @@
 		margin-bottom: 69px
 		+r(1920)
 			font-size: 20px
+		+r(1024)
+			font-size: 18px
+		+r(768)
+			font-size: 15px
+		+r(480)
+			margin-bottom: 34px
 	&__wrapper
 		display: flex
 		flex-wrap: wrap
 		justify-content: space-between
+		+r(640)
+			justify-content: center
 
 .step-item
 	max-width: 620px
@@ -80,8 +100,103 @@
 			background: url('../img/bg_step_item_1440_3.jpg') no-repeat center
 		&:nth-of-type(4)
 			background: url('../img/bg_step_item_1440_4.jpg') no-repeat center
+	+r(1024)
+		padding: 38px 60px 0
+		max-width: 390px
+		&:nth-of-type(-n+2)
+			margin-bottom: 20px
+		&:nth-of-type(1)
+			background: url('../img/bg_step_item_1024_1.jpg') no-repeat center
+			.step-item
+				&__wrap-img
+					width: 60px
+		&:nth-of-type(2)
+			background: url('../img/bg_step_item_1024_2.jpg') no-repeat center
+			.step-item
+				&__wrap-img
+					width: 68px
+		&:nth-of-type(3)
+			background: url('../img/bg_step_item_1024_3.jpg') no-repeat center
+			.step-item
+				&__wrap-img
+					margin-bottom: 53px
+					width: 80px
+		&:nth-of-type(4)
+			background: url('../img/bg_step_item_1024_4.jpg') no-repeat center
+			padding-top: 50px
+			.step-item
+				&__wrap-img
+					width: 80px
+					margin-bottom: 38px
+	+r(860)
+		max-width: 340px
+		padding: 38px 20px 0
+	+r(768)
+		max-width: 280px
+		display: flex
+		align-items: flex-start
+		text-align: left
+		padding: 27px 29px 0px
+		min-height: 203px
+		&:nth-of-type(1)
+			.step-item
+				background: url('../img/bg_step_item_768_1.jpg') no-repeat center
+				&__wrap-img
+					width: 39px
+		&:nth-of-type(2)
+			background: url('../img/bg_step_item_768_2.jpg') no-repeat center
+			.step-item
+				&__wrap-img
+					width: 43px
+		&:nth-of-type(3)
+			background: url('../img/bg_step_item_768_3.jpg') no-repeat center
+			.step-item
+				&__wrap-img
+					width: 42px
+					margin-bottom: 0
+		&:nth-of-type(4)
+			background: url('../img/bg_step_item_768_4.jpg') no-repeat center
+			padding-top: 27px
+			.step-item
+				&__wrap-img
+					width: 44px
+					margin-bottom: 0
+	+r(640)
+		max-width: 340px
+		min-height: 160px
+		padding: 36px 19px 0
+		&:nth-of-type(-n+3)
+			margin-bottom: 20px
+		&:nth-of-type(1), &:nth-of-type(2), &:nth-of-type(3), &:nth-of-type(4)
+			.step-item
+				&__wrap-img
+					width: 45px
+		&:nth-of-type(1)
+			background: url('../img/bg_step_item_640_1.jpg') no-repeat center
+		&:nth-of-type(2)
+			background: url('../img/bg_step_item_640_2.jpg') no-repeat center
+		&:nth-of-type(3)
+			background: url('../img/bg_step_item_640_3.jpg') no-repeat center
+		&:nth-of-type(4)
+			background: url('../img/bg_step_item_640_4.jpg') no-repeat center
 	&__wrap-img
 		margin-bottom: 30px
+		+r(1024)
+			margin: auto
+			margin-bottom: 49px
+		+r(768)
+			margin: 0
+			margin-right: 20px
+			flex-shrink: 0
+		+r(640)
+			margin-right: 36px
+		+r(374)
+			margin-right: 20px
+	&__img
+		max-width: 100%
+	&__info
+		+r(640)
+			margin-top: -5px
 	&__ttl
 		font-weight: bold
 		font-size: 30px
@@ -91,6 +206,15 @@
 			font-size: 25px
 			line-height: 20px
 			margin-bottom: 15px
+		+r(1024)
+			font-size: 22px
+		+r(768)
+			font-size: 18px
+			line-height: 22px
+			margin-bottom: 9px
+		+r(640)
+			margin-bottom: 5px
+			font-size: 17px
 	&__desc
 		font-weight: 500
 		font-size: 25px
@@ -98,3 +222,11 @@
 		+r(1920)
 			font-size: 20px
 			line-height: 30px
+		+r(1024)
+			font-size: 17px
+			line-height: 29px
+		+r(768)
+			font-size: 15px
+			line-height: 24px
+		+r(480)
+			font-size: 14px

@@ -7,6 +7,9 @@ body
 	overflow-x: hidden
 	+r(1920)
 		background-size: 1680px, auto
+	+r(640)
+		background: url('../img/svg/bg_header_480.svg') no-repeat center -57px, url('../img/svg/bg_body_bottom_640.svg') no-repeat center bottom
+		background-color: #1B1824
 html
 	overflow-x: hidden
 
@@ -24,12 +27,14 @@ html
 	+r(1680)
 		width: 970px
 	+r(1024)
-		width: 100%
-		padding: 0 30px
+		width: 800px
+	+r(860)
+		width: 700px
 	+r(768)
-		padding: 0 30px
+		width: 580px
 	+r(640)
-		padding: 0 20px
+		width: 100%
+		padding: 0 18px
 
 
 .bold
@@ -65,3 +70,9 @@ html
 			background: #FF006B
 		&:active
 			background: #FF27A9
+	+r(1024)
+		padding: 14px
+		font-size: 17px
+	+r(768)
+		padding: 12px
+		font-size: 16px
